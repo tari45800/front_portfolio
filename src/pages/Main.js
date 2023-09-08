@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import Line from "./Line";
+import Line from "../components/Line";
 import Header from "./Header";
 import Introduction from "./Introduction";
 import GlobalStyle from "../GlobalStyles";
 import About from "./About";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
-import BigTitle from "./BigTitle";
+import BigTitle from "../components/BigTitle";
 import Project from "./Project";
 import Contact from "./Contact";
 

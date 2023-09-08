@@ -34,8 +34,8 @@ function Introduction() {
   return (
     <>
       <IntroductionContainer>
-        <div>도전하는 -</div>
-        <div>프론트 개발자</div>
+        <div>사람을 위하는</div>
+        <div>프론트엔드 개발자</div>
         <div>이제윤입니다.</div>
 
         <NavContainer>
