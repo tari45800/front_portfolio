@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Observer from "./Observer";
 
 const BigTitleContainer = styled.div`
   height: 100vh;
@@ -11,7 +12,11 @@ const BigTitleContainer = styled.div`
 `;
 
 function BigTitle() {
-  return <BigTitleContainer>PROJECT</BigTitleContainer>;
+  return (
+    <BigTitleContainer>
+      <Observer>PROJECT</Observer>
+    </BigTitleContainer>
+  );
 }
 
 export default BigTitle;

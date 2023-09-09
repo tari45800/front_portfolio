@@ -9,6 +9,7 @@ import Experiences from "./Experiences";
 import BigTitle from "../components/BigTitle";
 import Project from "./Project";
 import Contact from "./Contact";
+import { useRef, useEffect, useState } from "react";
 
 const MainContainer = styled.div``;
 
@@ -18,7 +19,6 @@ function Main() {
       <GlobalStyle />
       <MainContainer>
         <Header />
-        <Line />
         <Introduction />
         <Line />
         <About />

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Line from "../components/Line";
+import Observer from "../components/Observer";
+import Button from "../components/Button";
 import VerticalLine from "../components/VerticalLine";
 import project1 from "../imgs/project1.png";
 import project2 from "../imgs/project2.png";
@@ -72,16 +74,10 @@ const ProjectImg = styled.div`
     width: 60rem;
     object-fit: cover;
   }
-`;
 
-const Button = styled.span`
-  margin: 0 auto;
-  width: fit-content;
-  padding: 1rem;
-  font-size: 0.8rem;
-  font-weight: normal;
-  border: 0.08rem solid #b3b3b3;
-  border-radius: 2rem;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 `;
 
 function Project() {
@@ -89,35 +85,50 @@ function Project() {
     <>
       <ProjectContainer>
         <ProjectContentContainer>
-          <ProjectTitle>The Gong</ProjectTitle>
-          <ProjectContentBox>
-            <ProjectContent>
-              <div>DATE</div>
-              <div>2023.05</div>
-            </ProjectContent>
-            <ProjectContent>
-              <div>DESCRIPTION</div>
-              <div>
-                웹 소켓을 기반으로 다수의 유저를 화상으로 연결하는 온라인 스터디
-                사이트
-              </div>
-            </ProjectContent>
-            <ProjectContent>
-              <div>SKILLS</div>
-              <div>
-                react, typescript, styled-components, axios, sockJS, Stomp,
-                Kurento
-              </div>
-            </ProjectContent>
-            <Button>프로젝트 상세 →</Button>
-          </ProjectContentBox>
+          <ProjectTitle>
+            <Observer>The Gong</Observer>
+          </ProjectTitle>
+          <Observer>
+            <ProjectContentBox>
+              <ProjectContent>
+                <div>DATE</div>
+                <div>2023.05</div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>DESCRIPTION</div>
+                <div>
+                  웹 소켓을 기반으로 다수의 유저를 화상으로 연결하는 온라인
+                  스터디 사이트
+                </div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>SKILLS</div>
+                <div>
+                  react, typescript, styled-components, axios, sockJS, Stomp,
+                  Kurento
+                </div>
+              </ProjectContent>
+              <Button
+                content={"프로젝트 상세 →"}
+                link={`https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#40879cae560744cfb328748dc40c457a`}
+              />
+            </ProjectContentBox>
+          </Observer>
         </ProjectContentContainer>
         <VerticalLine />
         <ProjectImg>
-          <img src={project1} alt="project1" />
-          <img src={project2} alt="project2" />
-          <img src={project3} alt="project3" />
-          <img src={project4} alt="project4" />
+          <Observer>
+            <img src={project1} alt="project1" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project2} alt="project2" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project3} alt="project3" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project4} alt="project4" />{" "}
+          </Observer>
         </ProjectImg>
       </ProjectContainer>
 
@@ -125,34 +136,45 @@ function Project() {
 
       <ProjectContainer>
         <ProjectContentContainer>
-          <ProjectTitle>KREAM</ProjectTitle>
-          <ProjectContentBox>
-            <ProjectContent>
-              <div>DATE</div>
-              <div>2023.05</div>
-            </ProjectContent>
-            <ProjectContent>
-              <div>DESCRIPTION</div>
-              <div>
-                웹 소켓을 기반으로 다수의 유저를 화상으로 연결하는 온라인 스터디
-                사이트
-              </div>
-            </ProjectContent>
-            <ProjectContent>
-              <div>SKILLS</div>
-              <div>
-                react, typescript, styled-components, axios, sockJS, Stomp,
-                Kurento
-              </div>
-            </ProjectContent>
-            <Button>프로젝트 상세 →</Button>
-          </ProjectContentBox>
+          <ProjectTitle>
+            {" "}
+            <Observer>KREAM </Observer>
+          </ProjectTitle>
+          <Observer>
+            <ProjectContentBox>
+              <ProjectContent>
+                <div>DATE</div>
+                <div>2023.05</div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>DESCRIPTION</div>
+                <div>
+                  웹 소켓을 기반으로 다수의 유저를 화상으로 연결하는 온라인
+                  스터디 사이트
+                </div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>SKILLS</div>
+                <div>
+                  react, typescript, styled-components, axios, sockJS, Stomp,
+                  Kurento
+                </div>
+              </ProjectContent>
+              <Button content={"프로젝트 상세 →"} />
+            </ProjectContentBox>
+          </Observer>
         </ProjectContentContainer>
         <VerticalLine />
         <ProjectImg>
-          <img src={project5} alt="project5" />
-          <img src={project6} alt="project6" />
-          <img src={project7} alt="project7" />
+          <Observer>
+            <img src={project5} alt="project5" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project6} alt="project6" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project7} alt="project7" />{" "}
+          </Observer>
         </ProjectImg>
       </ProjectContainer>
     </>
