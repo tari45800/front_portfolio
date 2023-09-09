@@ -25,13 +25,13 @@ const ProjectContentContainer = styled.div`
 `;
 
 const ProjectTitle = styled.div`
-  font-size: 3rem;
+  font-size: 2.5vw;
 `;
 
 const ProjectContentBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5vw;
 `;
 
 const ProjectContent = styled.div`
@@ -45,10 +45,10 @@ const ProjectContent = styled.div`
   font-family: "SUIT-Regular";
 
   display: flex;
-  font-size: 1rem;
-  gap: 2rem;
+  font-size: 0.8vw;
+  gap: 1.5vw;
   font-weight: 100;
-  line-height: 1.5rem;
+  line-height: 1.2vw;
 
   :nth-child(1) {
     flex: 1.2;
@@ -71,7 +71,8 @@ const ProjectImg = styled.div`
   img {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     filter: brightness(97%);
-    width: 60rem;
+    width: 45vw;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -91,11 +92,11 @@ function Project() {
           <Observer>
             <ProjectContentBox>
               <ProjectContent>
-                <div>DATE</div>
+                <div>PERIOD</div>
                 <div>2023.05</div>
               </ProjectContent>
               <ProjectContent>
-                <div>DESCRIPTION</div>
+                <div>DESC</div>
                 <div>
                   웹 소켓을 기반으로 다수의 유저를 화상으로 연결하는 온라인
                   스터디 사이트
@@ -109,7 +110,7 @@ function Project() {
                 </div>
               </ProjectContent>
               <Button
-                content={"프로젝트 상세 →"}
+                content={"프로젝트 상세"}
                 link={`https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#40879cae560744cfb328748dc40c457a`}
               />
             </ProjectContentBox>
@@ -143,24 +144,21 @@ function Project() {
           <Observer>
             <ProjectContentBox>
               <ProjectContent>
-                <div>DATE</div>
-                <div>2023.05</div>
+                <div>PERIOD</div>
+                <div>2023.03</div>
               </ProjectContent>
               <ProjectContent>
-                <div>DESCRIPTION</div>
-                <div>
-                  웹 소켓을 기반으로 다수의 유저를 화상으로 연결하는 온라인
-                  스터디 사이트
-                </div>
+                <div>DESC</div>
+                <div>flex와 미디어쿼리를 활용한 반응형 웹사이트 프로젝트</div>
               </ProjectContent>
               <ProjectContent>
                 <div>SKILLS</div>
-                <div>
-                  react, typescript, styled-components, axios, sockJS, Stomp,
-                  Kurento
-                </div>
+                <div>react, Redux, styled-components</div>
               </ProjectContent>
-              <Button content={"프로젝트 상세 →"} />
+              <Button
+                content={"프로젝트 상세"}
+                link={`https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#bd82bc285e5c4d73a22e4bee508a46a4`}
+              />
             </ProjectContentBox>
           </Observer>
         </ProjectContentContainer>

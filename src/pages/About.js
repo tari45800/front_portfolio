@@ -70,7 +70,7 @@ function About() {
             </div>
             <br />
             <Button
-              content={"자기소개서 →"}
+              content={"자기소개서"}
               link={`https://www.notion.so/1fccc52fda6049459a5c6588798cc897?pvs=4`}
             />
           </Observer>

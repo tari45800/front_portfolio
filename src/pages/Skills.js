@@ -1,29 +1,61 @@
 import styled from "styled-components";
 import Observer from "../components/Observer";
 import Button from "../components/Button";
+// import b1 from "../imgs/icons/b-1.png";
+// import b2 from "../imgs/icons/b-2.png";
+// import b3 from "../imgs/icons/b-3.png";
+// import b4 from "../imgs/icons/b-4.png";
+// import f2 from "../imgs/icons/f-2.png";
+// import f3 from "../imgs/icons/f-3.png";
+// import f4 from "../imgs/icons/f-4.png";
+// import t2 from "../imgs/icons/t-2.png";
+// import t3 from "../imgs/icons/t-3.png";
+// import t4 from "../imgs/icons/t-4.png";
 
 const SkillsContainer = styled.div`
-  padding: 5rem;
-  margin-top: 10rem;
   display: flex;
+  margin: 8rem 0;
+  padding: 5rem;
 `;
 
 const SkillsTitle = styled.div`
-  font-size: 5rem;
   flex: 1;
+  font-size: 3.5vw;
+`;
+
+const SkillsContentBox = styled.div`
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
 `;
 
 const SkillsContent = styled.div`
+  flex: 2.5;
   @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
   .nanumgothic * {
     font-family: "Nanum Gothic", sans-serif;
   }
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5vw;
   font-weight: 100;
-  line-height: 3.2rem;
-  flex: 2.5;
+  line-height: 2.4vw;
+
+  .SkillsContentTitle {
+    border-left: 0.4vw solid rgb(50, 50, 50);
+    height: 2vw;
+    font-size: 2vw;
+    padding-left: 0.7vw;
+    margin-bottom: 2vw;
+  }
+
+  span {
+    background-color: rgb(245, 245, 245);
+    padding: 0.3vw 0.8vw;
+    border-radius: 0.5vw;
+    margin-right: 1vw;
+  }
 `;
 
 function Skills() {
@@ -32,24 +64,47 @@ function Skills() {
       <SkillsTitle>
         <Observer>Skills</Observer>
       </SkillsTitle>
-      <SkillsContent>
+      <SkillsContentBox>
         <Observer>
-          <div>안녕하세요 도전하는 개발자 이제윤입니다.</div>
-          <div>
-            저의 노력이 사람들에게 자그마한 도움이 되고자 하는 개발자입니다.
-          </div>
-          <div>
-            그런목표를 이루기 위해 현재에 안주하지 않고, 주도적으로 발전하고
-            있습니다.
-          </div>
-          <div>
-            특히 JavaScript와 React를 중요하게 생각해, 책을 통해 기초를 다지고
-            있습니다.
-          </div>
-          <br />
-          <Button content={"자기소개서 →"} />
+          <SkillsContent>
+            <div className="SkillsContentTitle">Front-End</div>
+            <div>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Redux</span>
+              <span>TypeScript</span>
+              <span>styled-components</span>
+            </div>
+          </SkillsContent>
         </Observer>
-      </SkillsContent>
+
+        <Observer>
+          <SkillsContent>
+            <div className="SkillsContentTitle">Back-End</div>
+            <div>
+              <span>Node.js</span>
+              <span>AWS(EC2)</span>
+              <span>MySQL</span>
+              <span>OracleDB</span>
+            </div>
+          </SkillsContent>
+        </Observer>
+
+        <Observer>
+          <SkillsContent>
+            <div className="SkillsContentTitle">Tools</div>
+            <div>
+              <span>VSCode</span>
+              <span>Eclipse</span>
+              <span>Git</span>
+              <span>Github</span>
+              <span>Figma</span>
+            </div>
+          </SkillsContent>
+        </Observer>
+
+        {/* <Button content={"자기소개서 →"} /> */}
+      </SkillsContentBox>
     </SkillsContainer>
   );
 }

@@ -3,34 +3,51 @@ import Observer from "../components/Observer";
 import Button from "../components/Button";
 
 const ExperiencesContainer = styled.div`
-  padding: 5rem;
-  margin-top: 10rem;
   display: flex;
+  margin-top: 8rem;
+  padding: 5rem;
 `;
 
 const ExperiencesTitle = styled.div`
-  font-size: 5rem;
   flex: 1;
+  font-size: 3.5vw;
+`;
+
+const ExperiencesContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  flex: 2.5;
 `;
 
 const ExperiencesContentBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  flex: 2.5;
-`;
+  gap: 2vw;
 
-const ExperiencesContent = styled.div`
   @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
   .nanumgothic * {
     font-family: "Nanum Gothic", sans-serif;
   }
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4vw;
   font-weight: 100;
-  line-height: 3.2rem;
+  line-height: 2.4vw;
 `;
+
+const ExperiencesContentTitle = styled.div`
+  /* font-weight: normal; */
+  line-height: 1.5vw;
+  border-left: 0.4vw solid rgb(50, 50, 50);
+  height: 2.5vw;
+  padding-left: 0.7vw;
+  .period {
+    font-size: 0.8vw;
+    font-weight: lighter;
+  }
+`;
+
+const ExperiencesContent = styled.div``;
 
 function Experiences() {
   return (
@@ -38,44 +55,56 @@ function Experiences() {
       <ExperiencesTitle>
         <Observer>Experiences</Observer>
       </ExperiencesTitle>
-      <ExperiencesContentBox>
-        <ExperiencesContent>
-          <Observer>
-            <div>CODE STATES </div>
-            <div>2022/12 ~ 2023/06</div>
-            <br />
-            <div>소프트웨어 엔지니어링 부트캠프 프론트엔드 과정입니다.</div>
-            <div>
-              JavaScript, React, Redux, Node.js를 핵심적으로 학습했습니다.
-            </div>
-            <div>
-              패어 프로그레밍, 팀 프로젝트를 통한 협업 경험과 React를 기반으로
-              한 프론트엔드 기술 학습을 이루어 내었습니다.
-            </div>
-            <div>
-              특히 JavaScript와 React를 중요하게 생각해, 책을 통해 기초를 다지고
-              있습니다.
-            </div>
-            <br />
-            <Button content={"자기소개서 →"} />
-          </Observer>
-        </ExperiencesContent>
-        <br />
-        <ExperiencesContent>
-          <Observer>
-            <div>ITWILL </div>
-            <div>2022.03.254 ~ 2022.09.08</div>
-            <br />
-            <div>클라우드 기반 자바 네트워크 정보 시스템 과정</div>
-            <div>Java, Spring, JSP, sql를 핵심적으로 학습했습니다.</div>
-            <div>
-              팀 프로젝트를 통한 협업 경험과 JSP, Java를 기반으로 한 서버와, DB
-              등 전반적인 백엔드 기술 학습했습니다.
-            </div>
-            <br />
-          </Observer>
-        </ExperiencesContent>
-      </ExperiencesContentBox>
+      <ExperiencesContentContainer>
+        <Observer>
+          <ExperiencesContentBox>
+            <ExperiencesContentTitle>
+              <div>CODE STATES </div>
+              <div className="period">2022/12 ~ 2023/06</div>
+            </ExperiencesContentTitle>
+            <ExperiencesContent>
+              <div>소프트웨어 엔지니어링 부트캠프 프론트엔드 과정입니다.</div>
+              <div>JavaScript, React, Node.js를 핵심적으로 사용했습니다.</div>
+              <div>
+                패어 프로그레밍, 팀 프로젝트를 통한 협업 경험과 React를 기반으로
+              </div>
+              <div>
+                실습 과제를 통해 SPA, 비동기, RESTAPI, SEO, 상태관리 등 전반적인
+                프론트엔드 기술을 학습했습니다.
+              </div>
+            </ExperiencesContent>
+          </ExperiencesContentBox>
+        </Observer>
+
+        <Observer>
+          <ExperiencesContentBox>
+            <ExperiencesContentTitle>
+              <div>ITWILL </div>
+              <div className="period">2022/03 ~ 2022/10</div>
+            </ExperiencesContentTitle>
+            <ExperiencesContent>
+              <div>클라우드 기반 자바 네트워크 정보 시스템 과정입니다.</div>
+              <div>Java, Spring, JSP, sql를 핵심적으로 사용했습니다.</div>
+              <div>
+                {" "}
+                대면 교육과정으로, 팀 프로젝트를 통한 협업 경험과 JSP, Java를
+                기반으로{" "}
+              </div>
+              <div>
+                실습 과제를 통해 네트워크, DBMS, jQuery, 디자인 패턴 등 전반적인
+                백엔드 기술 학습했습니다.
+              </div>
+            </ExperiencesContent>
+          </ExperiencesContentBox>
+        </Observer>
+
+        <Observer>
+          <Button
+            content="학습 블로그"
+            link={"https://tari45800.tistory.com/category/CODE%20STATES"}
+          ></Button>
+        </Observer>
+      </ExperiencesContentContainer>
     </ExperiencesContainer>
   );
 }

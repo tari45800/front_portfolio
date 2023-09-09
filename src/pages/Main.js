@@ -9,9 +9,14 @@ import Experiences from "./Experiences";
 import BigTitle from "../components/BigTitle";
 import Project from "./Project";
 import Contact from "./Contact";
-import { useRef, useEffect, useState } from "react";
-
+import Project2 from "./Project2";
 const MainContainer = styled.div``;
+const Portfolio = styled.div`
+  font-size: 1rem;
+  text-align: center;
+  margin: 1.5vw;
+  font-weight: 100;
+`;
 
 function Main() {
   return (
@@ -31,8 +36,11 @@ function Main() {
         <Line />
         <Project />
         <Line />
+        <Project2 />
+        <Line />
         <Contact></Contact>
         <Line />
+        <Portfolio>Copyright © 2023 TARI All rights reserved</Portfolio>
       </MainContainer>
     </>
   );
