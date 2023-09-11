@@ -10,10 +10,16 @@ import project4 from "../imgs/project4.png";
 import project5 from "../imgs/project5.png";
 import project6 from "../imgs/project6.png";
 import project7 from "../imgs/project7.png";
+import project8 from "../imgs/project8.png";
+import project9 from "../imgs/project9.png";
+import project10 from "../imgs/project10.png";
+import project11 from "../imgs/project11.png";
 
 const ProjectContainer = styled.div`
-  height: 80vh;
   display: flex;
+  @media screen and (max-width: 80rem) {
+    flex-direction: column;
+  }
 `;
 
 const ProjectContentContainer = styled.div`
@@ -26,12 +32,22 @@ const ProjectContentContainer = styled.div`
 
 const ProjectTitle = styled.div`
   font-size: 2.5vw;
+
+  a {
+    color: black;
+  }
+  @media screen and (max-width: 80rem) {
+    font-size: 3vw;
+  }
 `;
 
 const ProjectContentBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
+  @media screen and (max-width: 80rem) {
+    display: none;
+  }
 `;
 
 const ProjectContent = styled.div`
@@ -71,8 +87,7 @@ const ProjectImg = styled.div`
   img {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     filter: brightness(97%);
-    width: 45vw;
-    height: 100%;
+    height: 30vw;
     object-fit: cover;
   }
 
@@ -87,7 +102,14 @@ function Project() {
       <ProjectContainer>
         <ProjectContentContainer>
           <ProjectTitle>
-            <Observer>The Gong</Observer>
+            <Observer>
+              <a
+                href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#40879cae560744cfb328748dc40c457a"
+                target="_blank"
+              >
+                The Gong
+              </a>
+            </Observer>
           </ProjectTitle>
           <Observer>
             <ProjectContentBox>
@@ -116,7 +138,9 @@ function Project() {
             </ProjectContentBox>
           </Observer>
         </ProjectContentContainer>
-        <VerticalLine />
+        <div>
+          <VerticalLine />
+        </div>
         <ProjectImg>
           <Observer>
             <img src={project1} alt="project1" />{" "}
@@ -133,13 +157,20 @@ function Project() {
         </ProjectImg>
       </ProjectContainer>
 
-      <Line></Line>
+      <Line />
 
       <ProjectContainer>
         <ProjectContentContainer>
           <ProjectTitle>
             {" "}
-            <Observer>KREAM </Observer>
+            <Observer>
+              <a
+                href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#bd82bc285e5c4d73a22e4bee508a46a4"
+                target="_blank"
+              >
+                KREAM
+              </a>
+            </Observer>
           </ProjectTitle>
           <Observer>
             <ProjectContentBox>
@@ -162,7 +193,9 @@ function Project() {
             </ProjectContentBox>
           </Observer>
         </ProjectContentContainer>
-        <VerticalLine />
+        <div>
+          <VerticalLine />
+        </div>
         <ProjectImg>
           <Observer>
             <img src={project5} alt="project5" />{" "}
@@ -172,6 +205,63 @@ function Project() {
           </Observer>
           <Observer>
             <img src={project7} alt="project7" />{" "}
+          </Observer>
+        </ProjectImg>
+      </ProjectContainer>
+
+      <Line />
+
+      <ProjectContainer>
+        <ProjectContentContainer>
+          <ProjectTitle>
+            {" "}
+            <Observer>
+              <a
+                href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#bd82bc285e5c4d73a22e4bee508a46a4"
+                target="_blank"
+              >
+                Portfolio
+              </a>
+            </Observer>
+          </ProjectTitle>
+          <Observer>
+            <ProjectContentBox>
+              <ProjectContent>
+                <div>PERIOD</div>
+                <div>2023.09</div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>DESC</div>
+                <div>
+                  flex와 스크롤 이벤트 애니메이션을 활용한 반응형 포트폴리오
+                </div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>SKILLS</div>
+                <div>react, styled-components</div>
+              </ProjectContent>
+              <Button
+                content={"프로젝트 상세"}
+                link={`https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#bd82bc285e5c4d73a22e4bee508a46a4`}
+              />
+            </ProjectContentBox>
+          </Observer>
+        </ProjectContentContainer>
+        <div>
+          <VerticalLine />
+        </div>
+        <ProjectImg>
+          <Observer>
+            <img src={project8} alt="project8" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project9} alt="project9" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project10} alt="project10" />{" "}
+          </Observer>
+          <Observer>
+            <img src={project11} alt="project11" />{" "}
           </Observer>
         </ProjectImg>
       </ProjectContainer>

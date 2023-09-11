@@ -1,13 +1,18 @@
 import styled from "styled-components";
+import Observer from "../components/Observer";
 
 const ContactContainer = styled.div`
   display: flex;
   padding: 5rem;
+  margin-top: 5vw;
 `;
 
 const ContactTitle = styled.div`
   flex: 1;
   font-size: 5rem;
+  @media screen and (max-width: 80rem) {
+    font-size: 3rem;
+  }
 `;
 
 const ContactContentBox = styled.div`
@@ -16,6 +21,11 @@ const ContactContentBox = styled.div`
   line-height: 1.5vw;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 80rem) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 `;
 
 const ContactContent = styled.div`
@@ -44,42 +54,49 @@ const ContactContent = styled.div`
 function Contact() {
   return (
     <ContactContainer>
-      <ContactTitle>Contact</ContactTitle>
+      <ContactTitle>
+        <Observer>Contact</Observer>
+      </ContactTitle>
       <ContactContentBox>
+        <ContactContent></ContactContent>
+
         <ContactContent>
-          <div className="ContactContentTitle gray">LOGS</div>
-          <div>나는 지수야</div>
-        </ContactContent>
-        <ContactContent>
-          <div className="ContactContentTitle gray">LOGS</div>
-          <div>
-            <a href="">NOTION</a>
-          </div>
-          <div>
-            <a href="https://tari45800.tistory.com/" target="_blank">
-              BLOG
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/tari45800" target="_blank">
-              GITHUB
-            </a>
-          </div>
-        </ContactContent>
-        <ContactContent>
-          <div className="ContactContentTitle gray">INFORMATION</div>
-          <div className="information">
+          <Observer>
+            <div className="ContactContentTitle gray">LOGS</div>
             <div>
-              <div className="gray">ADRESS</div>
-              <div className="gray">PHONE</div>
-              <div className="gray">E-MAIL</div>
+              <a href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4">
+                RESUME
+              </a>
             </div>
             <div>
-              <div>부산광역시 수영구</div>
-              <div>010-9526-7933</div>
-              <div>tari45800@gmail.com</div>
+              <a href="https://tari45800.tistory.com/" target="_blank">
+                BLOG
+              </a>
             </div>
-          </div>
+            <div>
+              <a href="https://github.com/tari45800" target="_blank">
+                GITHUB
+              </a>
+            </div>
+          </Observer>
+        </ContactContent>
+        <ContactContent>
+          {" "}
+          <Observer>
+            <div className="ContactContentTitle gray">INFORMATION</div>
+            <div className="information">
+              <div>
+                <div className="gray">ADRESS</div>
+                <div className="gray">PHONE</div>
+                <div className="gray">E-MAIL</div>
+              </div>
+              <div>
+                <div>부산광역시 수영구</div>
+                <div>010-9526-7933</div>
+                <div>tari45800@gmail.com</div>
+              </div>
+            </div>
+          </Observer>
         </ContactContent>
       </ContactContentBox>
     </ContactContainer>

@@ -5,7 +5,7 @@ const LineContainer = styled.div`
   height: 0.08rem;
   background-color: black;
   width: ${(props) => (props.visible ? "100%" : "0%")};
-  transition: width 1s ease-in-out;
+  transition: width 0.5s ease-in-out;
   transition-delay: 0.2s;
   margin: 0 auto;
 `;

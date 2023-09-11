@@ -6,11 +6,33 @@ const ExperiencesContainer = styled.div`
   display: flex;
   margin-top: 8rem;
   padding: 5rem;
+
+  @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+  .nanumgothic * {
+    font-family: "Nanum Gothic", sans-serif;
+  }
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 100;
+  line-height: 2.4vw;
+
+  @media screen and (max-width: 80rem) {
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 `;
 
 const ExperiencesTitle = styled.div`
   flex: 1;
   font-size: 3.5vw;
+  font-weight: normal;
+  margin-top: 0.2rem;
+
+  @media screen and (max-width: 80rem) {
+    font-size: 3rem;
+  }
 `;
 
 const ExperiencesContentContainer = styled.div`
@@ -24,15 +46,6 @@ const ExperiencesContentBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2vw;
-
-  @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-  .nanumgothic * {
-    font-family: "Nanum Gothic", sans-serif;
-  }
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 1.4vw;
-  font-weight: 100;
-  line-height: 2.4vw;
 `;
 
 const ExperiencesContentTitle = styled.div`
@@ -44,6 +57,17 @@ const ExperiencesContentTitle = styled.div`
   .period {
     font-size: 0.8vw;
     font-weight: lighter;
+  }
+
+  @media screen and (max-width: 80rem) {
+    line-height: 1.2rem;
+    height: 2rem;
+    border-left: 0.3rem solid rgb(50, 50, 50);
+    padding-left: 0.7rem;
+
+    .period {
+      font-size: 0.5rem;
+    }
   }
 `;
 
@@ -100,7 +124,7 @@ function Experiences() {
 
         <Observer>
           <Button
-            content="학습 블로그"
+            content="학습 블로그 바로가기"
             link={"https://tari45800.tistory.com/category/CODE%20STATES"}
           ></Button>
         </Observer>

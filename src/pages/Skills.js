@@ -16,22 +16,7 @@ const SkillsContainer = styled.div`
   display: flex;
   margin: 8rem 0;
   padding: 5rem;
-`;
 
-const SkillsTitle = styled.div`
-  flex: 1;
-  font-size: 3.5vw;
-`;
-
-const SkillsContentBox = styled.div`
-  flex: 2.5;
-  display: flex;
-  flex-direction: column;
-  gap: 7vw;
-`;
-
-const SkillsContent = styled.div`
-  flex: 2.5;
   @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
   .nanumgothic * {
@@ -42,12 +27,50 @@ const SkillsContent = styled.div`
   font-weight: 100;
   line-height: 2.4vw;
 
+  @media screen and (max-width: 80rem) {
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+`;
+
+const SkillsTitle = styled.div`
+  flex: 1;
+  font-size: 3.5vw;
+  font-weight: normal;
+
+  @media screen and (max-width: 80rem) {
+    font-size: 3rem;
+  }
+`;
+
+const SkillsContentBox = styled.div`
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+
+  @media screen and (max-width: 80rem) {
+    gap: 5rem;
+  }
+`;
+
+const SkillsContent = styled.div`
+  flex: 2.5;
+
   .SkillsContentTitle {
     border-left: 0.4vw solid rgb(50, 50, 50);
     height: 2vw;
     font-size: 2vw;
     padding-left: 0.7vw;
     margin-bottom: 2vw;
+
+    @media screen and (max-width: 80rem) {
+      font-size: 2rem;
+      height: 1.8rem;
+      border-left: 0.4rem solid rgb(50, 50, 50);
+    }
   }
 
   span {
@@ -55,6 +78,14 @@ const SkillsContent = styled.div`
     padding: 0.3vw 0.8vw;
     border-radius: 0.5vw;
     margin-right: 1vw;
+
+    @media screen and (max-width: 80rem) {
+      padding: 0.3rem 0.8rem;
+      line-height: 3rem;
+
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+    }
   }
 `;
 
@@ -86,6 +117,7 @@ function Skills() {
               <span>AWS(EC2)</span>
               <span>MySQL</span>
               <span>OracleDB</span>
+              <span>Java</span>
             </div>
           </SkillsContent>
         </Observer>

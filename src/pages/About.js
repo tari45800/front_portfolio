@@ -6,15 +6,7 @@ const AboutContainer = styled.div`
   display: flex;
   margin-top: 8rem;
   padding: 5rem;
-`;
 
-const AboutTitle = styled.div`
-  flex: 1;
-  font-size: 3.5vw;
-`;
-
-const AboutContent = styled.div`
-  flex: 2.5;
   @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
   .nanumgothic * {
     font-family: "Nanum Gothic", sans-serif;
@@ -23,6 +15,28 @@ const AboutContent = styled.div`
   font-size: 1.5vw;
   font-weight: 100;
   line-height: 2.4vw;
+
+  @media screen and (max-width: 80rem) {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+`;
+
+const AboutTitle = styled.div`
+  flex: 1;
+  font-size: 3.5vw;
+  font-weight: normal;
+
+  @media screen and (max-width: 80rem) {
+    font-size: 3rem;
+  }
+`;
+
+const AboutContent = styled.div`
+  flex: 2.5;
+  margin-top: 0.5rem;
 `;
 
 function About() {
@@ -70,7 +84,7 @@ function About() {
             </div>
             <br />
             <Button
-              content={"자기소개서"}
+              content={"자기소개서 바로가기"}
               link={`https://www.notion.so/1fccc52fda6049459a5c6588798cc897?pvs=4`}
             />
           </Observer>

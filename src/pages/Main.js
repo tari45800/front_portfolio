@@ -16,6 +16,7 @@ const Portfolio = styled.div`
   text-align: center;
   margin: 1.5vw;
   font-weight: 100;
+  transition: 1s;
 `;
 
 function Main() {
@@ -25,20 +26,30 @@ function Main() {
       <MainContainer>
         <Header />
         <Introduction />
-        <Line />
+        <div id="about">
+          <Line />
+        </div>
         <About />
-        <Line />
+        <div id="skills">
+          <Line />
+        </div>
         <Skills />
-        <Line />
+        <div id="experiences">
+          <Line />
+        </div>
         <Experiences />
-        <Line />
+        <div id="project">
+          <Line />
+        </div>
         <BigTitle />
         <Line />
         <Project />
         <Line />
         <Project2 />
-        <Line />
-        <Contact></Contact>
+        <div id="contact">
+          <Line />
+        </div>
+        <Contact />
         <Line />
         <Portfolio>Copyright © 2023 TARI All rights reserved</Portfolio>
       </MainContainer>

@@ -5,10 +5,10 @@ const ObserverContainer = styled.div`
   opacity: ${(props) => (props.isVisible ? 1 : 0)};
   transform: translateY(${(props) => (props.isVisible ? 0 : "20px")});
   transition: opacity 0.5s, transform 0.5s;
-  transition-delay: 0.5s;
+  transition-delay: ${(props) => (props.delay ? `${props.delay}s` : "0.5s")};
 `;
 
-function Observer({ children }) {
+function Observer({ children, delay }) {
   const [isVisible, setIsVisible] = useState(false);
   const observerRef = useRef(null);
 
@@ -36,7 +36,7 @@ function Observer({ children }) {
   }, []);
 
   return (
-    <ObserverContainer ref={observerRef} isVisible={isVisible}>
+    <ObserverContainer ref={observerRef} isVisible={isVisible} delay={delay}>
       {children}
     </ObserverContainer>
   );

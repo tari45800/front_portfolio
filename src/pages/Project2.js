@@ -17,11 +17,19 @@ const Project2Container = styled.div`
 const Project2Desc = styled.div`
   flex: 1;
   display: flex;
+
+  @media screen and (max-width: 80rem) {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 `;
 
 const Project2Title = styled.div`
   flex: 1;
   font-size: 3.5vw;
+  @media screen and (max-width: 80rem) {
+    font-size: 3rem;
+  }
 `;
 
 const Project2Content = styled.div`
@@ -37,6 +45,11 @@ const Project2Content = styled.div`
 
   > div:last-of-type {
     margin-bottom: 1vw;
+  }
+
+  @media screen and (max-width: 80rem) {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 `;
 
@@ -97,15 +110,24 @@ function Project2() {
           <Project2Title>The Rest</Project2Title>
           <Project2Content>
             <div>나머지 팀 프로젝트와 사이드 프로젝트입니다.</div>
-            <div>3번의 팀 프로젝트와 5번의 사이드 프로젝트를 통해,</div>
             <div>
-              이제는 자력으로 홈페이지의 기본적인 프론트를 제작할 수 있습니다.
+              프론트엔드와 백엔드 두 가지 영역에서 프로젝트를 진행했습니다.{" "}
+            </div>
+            <div>
+              두 과정 모두 저마다의 매력있었고, 도움을 주며 프로젝트를
+              완성했으며, 우수하게 수료했습니다.
             </div>
             <div className="margin">
-              지금은 컴포넌트 재사용, 폴더구조, 상태관리 등, 개발의 효율을
-              높이는 방법을 찾아가고 있습니다.
+              그러나 역시 사용자와 더 가깝고, 제가 목표로 하는 것에 적합한 일은
+              프론트였습니다.
             </div>
-            <Button content={"깃허브 바로가기"} />
+            <div>그런 이유로 지금은 프론트 개발자로서 성장하고 있습니다.</div>
+            <Button
+              content={"깃허브 바로가기"}
+              link={
+                "https://github.com/tari45800?tab=overview&from=2023-09-01&to=2023-09-09"
+              }
+            />
           </Project2Content>
         </Project2Desc>
         <ProjectImgBox>

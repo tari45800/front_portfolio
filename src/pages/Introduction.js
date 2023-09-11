@@ -53,12 +53,16 @@ function Introduction() {
     <>
       <IntroductionContainer>
         <TitleContainer>
-          <div className="titleLeftLine"></div>
-          <div className="titleContentBox">
-            <div>사람을 위하는</div>
-            <div>프론트엔드 개발자</div>
-            <div>이제윤입니다.</div>
-          </div>
+          <Observer delay={1}>
+            <div className="titleLeftLine"></div>{" "}
+          </Observer>
+          <Observer delay={1}>
+            <div className="titleContentBox">
+              <div>사람을 위하는</div>
+              <div>프론트엔드 개발자</div>
+              <div>이제윤입니다.</div>
+            </div>
+          </Observer>
         </TitleContainer>
 
         <NavContainer>
