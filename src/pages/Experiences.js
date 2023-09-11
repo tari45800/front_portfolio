@@ -22,6 +22,10 @@ const ExperiencesContainer = styled.div`
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  @media screen and (max-width: 36rem) {
+    padding: 2rem;
+  }
 `;
 
 const ExperiencesTitle = styled.div`
@@ -33,6 +37,11 @@ const ExperiencesTitle = styled.div`
   @media screen and (max-width: 80rem) {
     font-size: 3rem;
   }
+
+  @media screen and (max-width: 36rem) {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 `;
 
 const ExperiencesContentContainer = styled.div`
@@ -40,12 +49,18 @@ const ExperiencesContentContainer = styled.div`
   flex-direction: column;
   gap: 5vw;
   flex: 2.5;
+  @media screen and (max-width: 36rem) {
+    gap: 3rem;
+  }
 `;
 
 const ExperiencesContentBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2vw;
+  @media screen and (max-width: 36rem) {
+    gap: 1rem;
+  }
 `;
 
 const ExperiencesContentTitle = styled.div`
@@ -71,7 +86,12 @@ const ExperiencesContentTitle = styled.div`
   }
 `;
 
-const ExperiencesContent = styled.div``;
+const ExperiencesContent = styled.div`
+  @media screen and (max-width: 36rem) {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+`;
 
 function Experiences() {
   return (

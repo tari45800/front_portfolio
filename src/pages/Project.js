@@ -25,9 +25,13 @@ const ProjectContainer = styled.div`
 const ProjectContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 3rem 5rem;
   flex: 1;
   justify-content: space-between;
+
+  @media screen and (max-width: 36rem) {
+    padding: 2rem;
+  }
 `;
 
 const ProjectTitle = styled.div`
@@ -38,6 +42,13 @@ const ProjectTitle = styled.div`
   }
   @media screen and (max-width: 80rem) {
     font-size: 3vw;
+  }
+
+  @media screen and (max-width: 36rem) {
+    line-height: 1.2rem;
+    height: 1rem;
+    border-left: 0.2rem solid rgb(50, 50, 50);
+    padding-left: 0.4rem;
   }
 `;
 
@@ -81,7 +92,7 @@ const ProjectImg = styled.div`
   flex: 3.5;
   display: flex;
   overflow: scroll;
-  padding: 3rem;
+  padding: 3rem 5rem;
   gap: 3rem;
 
   img {
@@ -94,6 +105,13 @@ const ProjectImg = styled.div`
   &::-webkit-scrollbar {
     width: 0;
   }
+
+  @media screen and (max-width: 36rem) {
+    padding: 0 2rem;
+    img {
+      height: 10rem;
+    }
+  }
 `;
 
 function Project() {
@@ -101,16 +119,17 @@ function Project() {
     <>
       <ProjectContainer>
         <ProjectContentContainer>
-          <ProjectTitle>
-            <Observer>
+          <Observer>
+            <ProjectTitle>
               <a
                 href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#40879cae560744cfb328748dc40c457a"
                 target="_blank"
               >
                 The Gong
               </a>
-            </Observer>
-          </ProjectTitle>
+            </ProjectTitle>
+          </Observer>
+
           <Observer>
             <ProjectContentBox>
               <ProjectContent>
@@ -161,17 +180,17 @@ function Project() {
 
       <ProjectContainer>
         <ProjectContentContainer>
-          <ProjectTitle>
-            {" "}
-            <Observer>
+          <Observer>
+            <ProjectTitle>
+              {" "}
               <a
                 href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#bd82bc285e5c4d73a22e4bee508a46a4"
                 target="_blank"
               >
                 KREAM
               </a>
-            </Observer>
-          </ProjectTitle>
+            </ProjectTitle>
+          </Observer>
           <Observer>
             <ProjectContentBox>
               <ProjectContent>
@@ -213,17 +232,17 @@ function Project() {
 
       <ProjectContainer>
         <ProjectContentContainer>
-          <ProjectTitle>
-            {" "}
-            <Observer>
+          <Observer>
+            <ProjectTitle>
               <a
                 href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#bd82bc285e5c4d73a22e4bee508a46a4"
                 target="_blank"
               >
                 Portfolio
               </a>
-            </Observer>
-          </ProjectTitle>
+            </ProjectTitle>
+          </Observer>
+
           <Observer>
             <ProjectContentBox>
               <ProjectContent>

@@ -12,6 +12,11 @@ const Project2Container = styled.div`
   padding: 5rem;
   flex-direction: column;
   gap: 5vw;
+
+  @media screen and (max-width: 36rem) {
+    padding: 2rem;
+    gap: 3rem;
+  }
 `;
 
 const Project2Desc = styled.div`
@@ -29,6 +34,10 @@ const Project2Title = styled.div`
   font-size: 3.5vw;
   @media screen and (max-width: 80rem) {
     font-size: 3rem;
+  }
+  @media screen and (max-width: 36rem) {
+    font-size: 2rem;
+    font-weight: bold;
   }
 `;
 
@@ -51,6 +60,11 @@ const Project2Content = styled.div`
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  @media screen and (max-width: 36rem) {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
 `;
 
 const ProjectImgBox = styled.div`
@@ -72,6 +86,13 @@ const ProjectImgBox = styled.div`
 
   &::-webkit-scrollbar {
     width: 0;
+  }
+
+  @media screen and (max-width: 80rem) {
+    padding: 0 2rem;
+    img {
+      height: 10rem;
+    }
   }
 `;
 

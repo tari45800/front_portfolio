@@ -17,6 +17,10 @@ const Portfolio = styled.div`
   margin: 1.5vw;
   font-weight: 100;
   transition: 1s;
+
+  @media screen and (max-width: 36rem) {
+    font-size: 0.5rem;
+  }
 `;
 
 function Main() {

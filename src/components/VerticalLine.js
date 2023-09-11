@@ -10,6 +10,10 @@ const VerticalLineContainer = styled.div`
   transition: transform 1s ease-in-out;
   transition-delay: 0.2s;
   margin: 0 auto;
+
+  @media screen and (max-width: 36rem) {
+    width: 0.06rem;
+  }
 `;
 
 function VerticalLine() {

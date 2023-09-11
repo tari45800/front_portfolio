@@ -9,16 +9,20 @@ const IntroductionContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 10rem;
+
+  @media screen and (max-width: 36rem) {
+    padding: 2rem;
+  }
 `;
 
 const TitleContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5vw;
 
   .titleLeftLine {
     height: 16vw;
-    border-left: 1rem solid black;
+    border-left: 0.8vw solid black;
     transition: 0.5s;
   }
 
@@ -29,6 +33,20 @@ const TitleContainer = styled.div`
     font-size: 4.5vw;
     line-height: 6vw;
     transition: 0.5s;
+  }
+
+  @media screen and (max-width: 36rem) {
+    gap: 1rem;
+
+    .titleLeftLine {
+      height: 8rem;
+      border-left: 0.5rem solid black;
+    }
+
+    .titleContentBox {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 `;
 
@@ -43,7 +61,6 @@ const NavContainer = styled.div`
     display: flex;
     justify-content: center;
     cursor: pointer;
-
     height: 3rem;
   }
 `;

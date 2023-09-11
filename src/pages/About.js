@@ -22,6 +22,10 @@ const AboutContainer = styled.div`
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
+
+  @media screen and (max-width: 36rem) {
+    padding: 2rem;
+  }
 `;
 
 const AboutTitle = styled.div`
@@ -32,11 +36,21 @@ const AboutTitle = styled.div`
   @media screen and (max-width: 80rem) {
     font-size: 3rem;
   }
+
+  @media screen and (max-width: 36rem) {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 `;
 
 const AboutContent = styled.div`
   flex: 2.5;
   margin-top: 0.5rem;
+
+  @media screen and (max-width: 36rem) {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
 `;
 
 function About() {

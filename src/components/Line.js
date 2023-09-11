@@ -8,6 +8,10 @@ const LineContainer = styled.div`
   transition: width 0.5s ease-in-out;
   transition-delay: 0.2s;
   margin: 0 auto;
+
+  @media screen and (max-width: 36rem) {
+    height: 0.06rem;
+  }
 `;
 
 function Line() {

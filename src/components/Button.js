@@ -17,6 +17,11 @@ const ButtonContainer = styled.span`
   background-color: rgb(245, 245, 245);
   cursor: pointer;
 
+  @media screen and (max-width: 36rem) {
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
   &:hover {
     transition: 0.5s;
     border: 0.08rem solid rgb(50, 50, 50);

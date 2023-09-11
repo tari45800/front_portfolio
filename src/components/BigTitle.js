@@ -9,6 +9,9 @@ const BigTitleContainer = styled.div`
   align-items: center;
 
   font-size: 10rem;
+  @media screen and (max-width: 36rem) {
+    font-size: 4rem;
+  }
 `;
 
 function BigTitle() {

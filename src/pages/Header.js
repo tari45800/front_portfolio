@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Observer from "../components/Observer";
 
 const HeaderContainer = styled.div`
   position: sticky;
@@ -23,6 +22,10 @@ const HeaderContainer = styled.div`
 
   @media screen and (max-width: 40rem) {
     gap: 3rem;
+  }
+
+  @media screen and (max-width: 36rem) {
+    padding: 2rem;
   }
 `;
 
@@ -56,6 +59,9 @@ const NavContainer = styled.div`
 
   a {
     color: black;
+  }
+  @media screen and (max-width: 36rem) {
+    display: none;
   }
 `;
 

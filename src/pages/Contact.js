@@ -5,6 +5,12 @@ const ContactContainer = styled.div`
   display: flex;
   padding: 5rem;
   margin-top: 5vw;
+
+  @media screen and (max-width: 36rem) {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
 `;
 
 const ContactTitle = styled.div`
@@ -12,6 +18,11 @@ const ContactTitle = styled.div`
   font-size: 5rem;
   @media screen and (max-width: 80rem) {
     font-size: 3rem;
+  }
+
+  @media screen and (max-width: 36rem) {
+    font-size: 2rem;
+    font-weight: bold;
   }
 `;
 
@@ -24,6 +35,11 @@ const ContactContentBox = styled.div`
 
   @media screen and (max-width: 80rem) {
     font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  @media screen and (max-width: 36rem) {
+    font-size: 0.9rem;
     line-height: 1.5rem;
   }
 `;
@@ -48,6 +64,12 @@ const ContactContent = styled.div`
 
   a {
     color: black;
+  }
+
+  @media screen and (max-width: 36rem) {
+    &:first-of-type {
+      display: none;
+    }
   }
 `;
 
