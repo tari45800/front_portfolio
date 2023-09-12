@@ -72,6 +72,7 @@ const SkillsContentBox = styled.div`
 
 const SkillsContent = styled.div`
   flex: 2.5;
+  word-break: break-all;
 
   .SkillsContentTitle {
     border-left: 0.4vw solid rgb(50, 50, 50);

@@ -63,6 +63,11 @@ const ContactContent = styled.div`
   }
 
   a {
+    color: rgb(100, 100, 100);
+    transition: 0.5s;
+  }
+
+  a:hover {
     color: black;
   }
 

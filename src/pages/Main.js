@@ -10,9 +10,7 @@ import BigTitle from "../components/BigTitle";
 import Project from "./Project";
 import Contact from "./Contact";
 import Project2 from "./Project2";
-const MainContainer = styled.div`
-  //test commit
-`;
+const MainContainer = styled.div``;
 const Portfolio = styled.div`
   font-size: 1rem;
   text-align: center;
