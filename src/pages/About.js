@@ -67,7 +67,7 @@ function About() {
         <AboutContent>
           <div>
             <Observer>
-              <div>3번의 팀 프로젝트와 5번의 사이드 프로젝트를 통해,</div>
+              <div>4개월의 실무 경험과 3번의 팀 프로젝트를 통해,</div>
               <div>
                 이제는 자력으로 홈페이지의 기본적인 프론트를 제작할 수 있습니다.
               </div>
@@ -111,7 +111,7 @@ function About() {
           <Observer>
             <Button
               content={"이력서 바로가기"}
-              link={`https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28`}
+              link={`https://tarispersonalspace.notion.site/e1c6fb832bce4e7f8bac05557afd157b?pvs=74`}
             />
           </Observer>
         </AboutContent>

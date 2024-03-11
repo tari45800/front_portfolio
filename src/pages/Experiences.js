@@ -100,6 +100,30 @@ function Experiences() {
         <Observer>Experiences</Observer>
       </ExperiencesTitle>
       <ExperiencesContentContainer>
+
+      <Observer>
+          <ExperiencesContentBox>
+            <ExperiencesContentTitle>
+              <div>EverydayMath </div>
+              <div className="period">2023/10 ~ 2024/02 </div>
+            </ExperiencesContentTitle>
+            <ExperiencesContent>
+              <div>에듀태크 스타트업 회사며 프론트엔드 개발자로 재직했습니다.</div>
+              <div>
+                자사의 강의 사이트를 유지보수 및 ui와 프로세스를 개선했고,
+              </div>
+              <div>
+                또한 자사의 강의 사이트를 리뉴얼하기 위한 설계를 담당했습니다.
+              </div>
+              <div>
+                수강신청을 위한 오프라인 학원 사이트를 만들었습니다. 
+              </div>
+
+        
+            </ExperiencesContent>
+          </ExperiencesContentBox>
+        </Observer>
+
         <Observer>
           <ExperiencesContentBox>
             <ExperiencesContentTitle>
@@ -110,33 +134,11 @@ function Experiences() {
               <div>소프트웨어 엔지니어링 부트캠프 프론트엔드 과정입니다.</div>
               <div>JavaScript, React, Node.js를 핵심적으로 사용했습니다.</div>
               <div>
-                패어 프로그레밍, 팀 프로젝트를 통한 협업 경험과 React를 기반으로
+                패어 프로그레밍, 팀 프로젝트를 통한 협업 경험과 React를 기반으로 한
               </div>
               <div>
                 실습 과제를 통해 SPA, 비동기, RESTAPI, SEO, 상태관리 등 전반적인
                 프론트엔드 기술을 학습했습니다.
-              </div>
-            </ExperiencesContent>
-          </ExperiencesContentBox>
-        </Observer>
-
-        <Observer>
-          <ExperiencesContentBox>
-            <ExperiencesContentTitle>
-              <div>ITWILL </div>
-              <div className="period">2022/03 ~ 2022/10</div>
-            </ExperiencesContentTitle>
-            <ExperiencesContent>
-              <div>클라우드 기반 자바 네트워크 정보 시스템 과정입니다.</div>
-              <div>Java, Spring, JSP, sql를 핵심적으로 사용했습니다.</div>
-              <div>
-                {" "}
-                대면 교육과정으로, 팀 프로젝트를 통한 협업 경험과 JSP, Java를
-                기반으로{" "}
-              </div>
-              <div>
-                실습 과제를 통해 네트워크, DBMS, jQuery, 디자인 패턴 등 전반적인
-                백엔드 기술 학습했습니다.
               </div>
             </ExperiencesContent>
           </ExperiencesContentBox>

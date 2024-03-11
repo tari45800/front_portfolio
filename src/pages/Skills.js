@@ -144,8 +144,6 @@ function Skills() {
               <span>Node.js</span>
               <span>AWS(EC2)</span>
               <span>MySQL</span>
-              <span>OracleDB</span>
-              <span>Java</span>
             </div>
           </SkillsContent>
         </Observer>
@@ -155,7 +153,6 @@ function Skills() {
             <div className="SkillsContentTitle">Tools</div>
             <div>
               <span>VSCode</span>
-              <span>Eclipse</span>
               <span>Git</span>
               <span>Github</span>
               <span>Figma</span>

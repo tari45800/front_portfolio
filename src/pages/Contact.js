@@ -91,7 +91,7 @@ function Contact() {
           <Observer>
             <div className="ContactContentTitle gray">LOGS</div>
             <div>
-              <a href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4">
+              <a href="https://tarispersonalspace.notion.site/099f556c195d4df48e67b1771723d379?pvs=74">
                 RESUME
               </a>
             </div>

@@ -131,7 +131,7 @@ function Project2() {
           <Project2Title>The Rest</Project2Title>
           <Project2Content>
             <div>나머지 팀 프로젝트와 사이드 프로젝트입니다.</div>
-            <div>
+            {/* <div>
               프론트엔드와 백엔드 두 가지 영역에서 프로젝트를 진행했습니다.{" "}
             </div>
             <div>
@@ -142,7 +142,7 @@ function Project2() {
               그러나 역시 사용자와 더 가깝고, 제가 목표로 하는 것에 적합한 일은
               프론트였습니다.
             </div>
-            <div>그런 이유로 지금은 프론트 개발자로서 성장하고 있습니다.</div>
+            <div>그런 이유로 지금은 프론트 개발자로서 성장하고 있습니다.</div> */}
             <Button
               content={"깃허브 바로가기"}
               link={
