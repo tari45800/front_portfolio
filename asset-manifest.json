@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.js": "/front_portfolio.github.io/static/js/main.a16a3dfc.js",
+    "main.js": "/front_portfolio.github.io/static/js/main.cbe49314.js",
     "static/media/project2-2.png": "/front_portfolio.github.io/static/media/project2-2.dfdba163583481a5437f.png",
     "static/media/project2-4.png": "/front_portfolio.github.io/static/media/project2-4.fb4af178de899dd94dbf.png",
+    "static/media/s1.png": "/front_portfolio.github.io/static/media/s1.ab53fe1ff61232243356.png",
+    "static/media/s3.png": "/front_portfolio.github.io/static/media/s3.6fe12a55934557c6250d.png",
+    "static/media/s2.png": "/front_portfolio.github.io/static/media/s2.652bdf97b5749707729a.png",
+    "static/media/s4.png": "/front_portfolio.github.io/static/media/s4.a32998b99bcbe8e1ae02.png",
     "static/media/project2-3.png": "/front_portfolio.github.io/static/media/project2-3.abe65afb2d8aaf82bb40.png",
+    "static/media/e1.png": "/front_portfolio.github.io/static/media/e1.0d510430e4d573eb4f31.png",
     "static/media/project1.png": "/front_portfolio.github.io/static/media/project1.32c2aed0770d6ff8c22b.png",
     "static/media/project2.png": "/front_portfolio.github.io/static/media/project2.d698b746832e9a203753.png",
     "static/media/project5.png": "/front_portfolio.github.io/static/media/project5.bf4082297b5c1f5d1a63.png",
+    "static/media/e2.png": "/front_portfolio.github.io/static/media/e2.882d922e2e8cdee70e06.png",
     "static/media/project6.png": "/front_portfolio.github.io/static/media/project6.5f511f26b4f413e01ef9.png",
     "static/media/project2-1.png": "/front_portfolio.github.io/static/media/project2-1.9e5b404ce3f4a5d4de72.png",
-    "static/media/project9.png": "/front_portfolio.github.io/static/media/project9.debead354f523704357e.png",
+    "static/media/e3.png": "/front_portfolio.github.io/static/media/e3.418734bbb1cf0daa1a11.png",
     "static/media/project4.png": "/front_portfolio.github.io/static/media/project4.b82a7bde4930b0cf268d.png",
     "static/media/project3.png": "/front_portfolio.github.io/static/media/project3.ec431ec0ef12cd21eb3d.png",
-    "static/media/project11.png": "/front_portfolio.github.io/static/media/project11.04281095ffc73102c8a7.png",
     "static/media/project7.png": "/front_portfolio.github.io/static/media/project7.04a85f83aa6149e04897.png",
-    "static/media/project10.png": "/front_portfolio.github.io/static/media/project10.27ecf752a4f56854f488.png",
-    "static/media/project8.png": "/front_portfolio.github.io/static/media/project8.9cecdb145b81001ed457.png",
     "index.html": "/front_portfolio.github.io/index.html",
-    "main.a16a3dfc.js.map": "/front_portfolio.github.io/static/js/main.a16a3dfc.js.map"
+    "main.cbe49314.js.map": "/front_portfolio.github.io/static/js/main.cbe49314.js.map"
   },
   "entrypoints": [
-    "static/js/main.a16a3dfc.js"
+    "static/js/main.cbe49314.js"
   ]
 }
