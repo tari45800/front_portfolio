@@ -130,9 +130,11 @@ function Skills() {
             <div>
               <span>JavaScript</span>
               <span>React</span>
-              <span>Redux</span>
+              <span>Next.js</span>
               <span>TypeScript</span>
               <span>styled-components</span>
+              <span>Redux</span>
+              <span>JQuery</span>
             </div>
           </SkillsContent>
         </Observer>
