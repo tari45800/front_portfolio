@@ -37,6 +37,7 @@ const SkillsContainer = styled.div`
   @media screen and (max-width: 36rem) {
     padding: 2rem;
   }
+  
 `;
 
 const SkillsTitle = styled.div`
