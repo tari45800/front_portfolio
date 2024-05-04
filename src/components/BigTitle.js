@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Observer from "./Observer";
 
+// sorry
 const BigTitleContainer = styled.div`
   height: 100vh;
 
