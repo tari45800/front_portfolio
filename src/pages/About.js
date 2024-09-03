@@ -67,16 +67,9 @@ function About() {
         <AboutContent>
           <div>
             <Observer>
-              <div>4개월의 실무 경험과 3번의 팀 프로젝트를 통해,</div>
+              <div>4개월의 인턴 경험과 팀, 개인 프로젝트를 통해</div>
               <div>
                 이제는 자력으로 홈페이지의 기본적인 프론트를 제작할 수 있습니다.
-              </div>
-              <div>
-                지금은 컴포넌트 재사용, 폴더구조, 상태관리 등, 개발의 효율을
-                높이는 방법을 찾아가고 있습니다.
-              </div>
-              <div>
-                유저를 위한 UI/UX의 가치를 알기에 이를 우선으로 고민합니다.
               </div>
             </Observer>
           </div>
@@ -88,8 +81,8 @@ function About() {
                 그러한 비전에 다가갈 수 있도록 늘 주도적으로 배움을 추구하며
               </div>
               <div>
-                특히 기초를 단단히 하기 위해 javascript, react를 책으로 정리해
-                나가고 있습니다.
+                특히 기초를 단단히 하기 위해 오픈소스를 뜯어보는 연습을 하고
+                있습니다.
               </div>
             </Observer>
           </div>
@@ -111,7 +104,7 @@ function About() {
           <Observer>
             <Button
               content={"이력서 바로가기"}
-              link={`https://tarispersonalspace.notion.site/e1c6fb832bce4e7f8bac05557afd157b?pvs=74`}
+              link={`https://tarispersonalspace.notion.site/`}
             />
           </Observer>
         </AboutContent>

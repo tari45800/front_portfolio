@@ -7,9 +7,6 @@ import project1 from "../imgs/project1.png";
 import project2 from "../imgs/project2.png";
 import project3 from "../imgs/project3.png";
 import project4 from "../imgs/project4.png";
-import project5 from "../imgs/project5.png";
-import project6 from "../imgs/project6.png";
-import project7 from "../imgs/project7.png";
 import s1 from "../imgs/s1.png";
 import s2 from "../imgs/s2.png";
 import s3 from "../imgs/s3.png";
@@ -17,7 +14,7 @@ import s4 from "../imgs/s4.png";
 import e1 from "../imgs/e1.png";
 import e2 from "../imgs/e2.png";
 import e3 from "../imgs/e3.png";
-
+import e4 from "../imgs/e4.png";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -121,14 +118,63 @@ const ProjectImg = styled.div`
 function Project() {
   return (
     <>
-<ProjectContainer>
+      <ProjectContainer>
         <ProjectContentContainer>
           <Observer>
             <ProjectTitle>
-              <a
-                href="https://www.sseduacademy.com/"
-                target="_blank"
-              >
+              <a href="https://study-app-eight.vercel.app/" target="_blank">
+                타이머 사이트
+              </a>
+            </ProjectTitle>
+          </Observer>
+
+          <Observer>
+            <ProjectContentBox>
+              <ProjectContent>
+                <div>PERIOD</div>
+                <div>2024.08</div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>DESC</div>
+                <div>공부 타이머 사이트</div>
+              </ProjectContent>
+              <ProjectContent>
+                <div>SKILLS</div>
+                <div>react, typescript, TanstackQuery, zustand, msw, vite</div>
+              </ProjectContent>
+              <Button
+                content={"프로젝트 상세"}
+                link={`https://tarispersonalspace.notion.site/7f889ca6bb374dd1add2709a35099e0a?pvs=74`}
+              />
+            </ProjectContentBox>
+          </Observer>
+        </ProjectContentContainer>
+        <div>
+          <VerticalLine />
+        </div>
+        <ProjectImg>
+          <Observer>
+            <img src={e1} alt="project1" />{" "}
+          </Observer>
+          <Observer>
+            <img src={e2} alt="project2" />{" "}
+          </Observer>
+          <Observer>
+            <img src={e3} alt="project3" />{" "}
+          </Observer>
+          <Observer>
+            <img src={e4} alt="project3" />{" "}
+          </Observer>
+        </ProjectImg>
+      </ProjectContainer>
+
+      <Line />
+
+      <ProjectContainer>
+        <ProjectContentContainer>
+          <Observer>
+            <ProjectTitle>
+              <a href="https://www.sseduacademy.com/" target="_blank">
                 SSEDU ACADEMY
               </a>
             </ProjectTitle>
@@ -142,19 +188,18 @@ function Project() {
               </ProjectContent>
               <ProjectContent>
                 <div>DESC</div>
-                <div>
-                수업을 접수할 수 있는 학원 홈페이지
-                </div>
+                <div>수업을 접수할 수 있는 학원 홈페이지</div>
               </ProjectContent>
               <ProjectContent>
                 <div>SKILLS</div>
                 <div>
-                next.js, axios, recoil, typescript, styled-components,  react-hook-form
+                  next.js, axios, recoil, typescript, styled-components,
+                  react-hook-form
                 </div>
               </ProjectContent>
               <Button
                 content={"프로젝트 상세"}
-                link={`https://tarispersonalspace.notion.site/SSEDU-ACADEMY-5d5783aff388436cac8419fd58257865`}
+                link={`https://tarispersonalspace.notion.site/SSEDU-ACADEMY-7294f2248f8649f695df6a0dfaead77a?pvs=74`}
               />
             </ProjectContentBox>
           </Observer>
@@ -175,62 +220,6 @@ function Project() {
           <Observer>
             <img src={s4} alt="project4" />{" "}
           </Observer>
-        </ProjectImg>
-      </ProjectContainer>
-
-      <Line />
-      <ProjectContainer>
-        <ProjectContentContainer>
-          <Observer>
-            <ProjectTitle>
-              <a
-                href="https://everydaymath.kr/"
-                target="_blank"
-              >
-                Everyday Math
-              </a>
-            </ProjectTitle>
-          </Observer>
-
-          <Observer>
-            <ProjectContentBox>
-              <ProjectContent>
-                <div>PERIOD</div>
-                <div>2023.10</div>
-              </ProjectContent>
-              <ProjectContent>
-                <div>DESC</div>
-                <div>
-                수학 강의를 수강할 수 있는 인강 사이트
-                </div>
-              </ProjectContent>
-              <ProjectContent>
-                <div>SKILLS</div>
-                <div>
-                wordpress, AIO SEO, WooCommerce, KBoard
-                </div>
-              </ProjectContent>
-              <Button
-                content={"프로젝트 상세"}
-                link={`https://tarispersonalspace.notion.site/Everyday-Math-171d6df74ac643bda59901f3a81a2b92`}
-              />
-            </ProjectContentBox>
-          </Observer>
-        </ProjectContentContainer>
-        <div>
-          <VerticalLine />
-        </div>
-        <ProjectImg>
-          <Observer>
-            <img src={e1} alt="project1" />{" "}
-          </Observer>
-          <Observer>
-            <img src={e2} alt="project2" />{" "}
-          </Observer>
-          <Observer>
-            <img src={e3} alt="project3" />{" "}
-          </Observer>
-
         </ProjectImg>
       </ProjectContainer>
 
@@ -271,7 +260,7 @@ function Project() {
               </ProjectContent>
               <Button
                 content={"프로젝트 상세"}
-                link={`https://tarispersonalspace.notion.site/THE-GONG-17869da8a5b54a08bd0f6efc252bbd0e`}
+                link={`https://tarispersonalspace.notion.site/THE-GONG-4d42ae3ed3854683a7196c2e7d639668?pvs=74`}
               />
             </ProjectContentBox>
           </Observer>
@@ -291,58 +280,6 @@ function Project() {
           </Observer>
           <Observer>
             <img src={project4} alt="project4" />{" "}
-          </Observer>
-        </ProjectImg>
-      </ProjectContainer>
-
-      <Line />
-
-      <ProjectContainer>
-        <ProjectContentContainer>
-          <Observer>
-            <ProjectTitle>
-              {" "}
-              <a
-                href="https://www.notion.so/528cc6e552ff4b97a73f6153e1702d28?pvs=4#bd82bc285e5c4d73a22e4bee508a46a4"
-                target="_blank"
-              >
-                KREAM
-              </a>
-            </ProjectTitle>
-          </Observer>
-          <Observer>
-            <ProjectContentBox>
-              <ProjectContent>
-                <div>PERIOD</div>
-                <div>2023.03</div>
-              </ProjectContent>
-              <ProjectContent>
-                <div>DESC</div>
-                <div>flex와 미디어쿼리를 활용한 반응형 웹사이트 프로젝트</div>
-              </ProjectContent>
-              <ProjectContent>
-                <div>SKILLS</div>
-                <div>react, Redux, styled-components</div>
-              </ProjectContent>
-              <Button
-                content={"프로젝트 상세"}
-                link={`https://tarispersonalspace.notion.site/KREAM-6d0b4319ce9d4466bd2d382c7236c7c6?pvs=74`}
-              />
-            </ProjectContentBox>
-          </Observer>
-        </ProjectContentContainer>
-        <div>
-          <VerticalLine />
-        </div>
-        <ProjectImg>
-          <Observer>
-            <img src={project5} alt="project5" />{" "}
-          </Observer>
-          <Observer>
-            <img src={project6} alt="project6" />{" "}
-          </Observer>
-          <Observer>
-            <img src={project7} alt="project7" />{" "}
           </Observer>
         </ProjectImg>
       </ProjectContainer>

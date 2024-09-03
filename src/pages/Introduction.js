@@ -75,8 +75,8 @@ function Introduction() {
           </Observer>
           <Observer delay={1}>
             <div className="titleContentBox">
-              <div>사람을 위하는</div>
-              <div>프론트엔드 개발자</div>
+              <div>'왜'라는 질문으로</div>
+              <div>성장하는 개발자</div>
               <div>이제윤입니다.</div>
             </div>
           </Observer>

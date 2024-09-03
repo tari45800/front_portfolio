@@ -19,6 +19,9 @@ const SkillsContainer = styled.div`
 
   @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+  .dot {
+  }
+
   .nanumgothic * {
     font-family: "Nanum Gothic", sans-serif;
   }
@@ -37,7 +40,6 @@ const SkillsContainer = styled.div`
   @media screen and (max-width: 36rem) {
     padding: 2rem;
   }
-  
 `;
 
 const SkillsTitle = styled.div`
@@ -127,25 +129,35 @@ function Skills() {
       <SkillsContentBox>
         <Observer>
           <SkillsContent>
-            <div className="SkillsContentTitle">Front-End</div>
+            <div className="SkillsContentTitle">Languages</div>
             <div>
               <span>JavaScript</span>
-              <span>React</span>
-              <span>Next.js</span>
               <span>TypeScript</span>
-              <span>styled-components</span>
-              <span>Redux</span>
-              <span>JQuery</span>
+              <span>Java</span>
             </div>
           </SkillsContent>
         </Observer>
 
         <Observer>
           <SkillsContent>
-            <div className="SkillsContentTitle">Back-End</div>
+            <div className="SkillsContentTitle">Frameworks & Libraries</div>
             <div>
+              <span>React</span>
+              <span>Next.js</span>
+              <span>React-Native</span>
+              <span>JQuery</span>
+              <span>styled-components</span>
+
+              <span>TanstackQuery</span>
+              <span>zustand</span>
+              <span>msw</span>
+
               <span>Node.js</span>
-              <span>AWS(EC2)</span>
+              <span>Express</span>
+              <span>Nest.js</span>
+              <span>JSP</span>
+              <span>Firebase</span>
+
               <span>MySQL</span>
             </div>
           </SkillsContent>
@@ -153,12 +165,15 @@ function Skills() {
 
         <Observer>
           <SkillsContent>
-            <div className="SkillsContentTitle">Tools</div>
+            <div className="SkillsContentTitle">Tools & Platforms</div>
             <div>
               <span>VSCode</span>
+              <span>Vite</span>
+
               <span>Git</span>
               <span>Github</span>
-              <span>Figma</span>
+
+              <span>AWS(EC2)</span>
             </div>
           </SkillsContent>
         </Observer>
