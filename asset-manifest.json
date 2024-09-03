@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/front_portfolio.github.io/static/js/main.2e343388.js",
+    "main.js": "/front_portfolio.github.io/static/js/main.c8be1509.js",
     "static/media/project2-2.png": "/front_portfolio.github.io/static/media/project2-2.dfdba163583481a5437f.png",
     "static/media/project2-4.png": "/front_portfolio.github.io/static/media/project2-4.fb4af178de899dd94dbf.png",
     "static/media/s1.png": "/front_portfolio.github.io/static/media/s1.ab53fe1ff61232243356.png",
@@ -8,21 +8,19 @@
     "static/media/s2.png": "/front_portfolio.github.io/static/media/s2.652bdf97b5749707729a.png",
     "static/media/s4.png": "/front_portfolio.github.io/static/media/s4.a32998b99bcbe8e1ae02.png",
     "static/media/project2-3.png": "/front_portfolio.github.io/static/media/project2-3.abe65afb2d8aaf82bb40.png",
-    "static/media/e1.png": "/front_portfolio.github.io/static/media/e1.0d510430e4d573eb4f31.png",
     "static/media/project1.png": "/front_portfolio.github.io/static/media/project1.32c2aed0770d6ff8c22b.png",
     "static/media/project2.png": "/front_portfolio.github.io/static/media/project2.d698b746832e9a203753.png",
-    "static/media/project5.png": "/front_portfolio.github.io/static/media/project5.bf4082297b5c1f5d1a63.png",
-    "static/media/e2.png": "/front_portfolio.github.io/static/media/e2.882d922e2e8cdee70e06.png",
-    "static/media/project6.png": "/front_portfolio.github.io/static/media/project6.5f511f26b4f413e01ef9.png",
+    "static/media/e3.png": "/front_portfolio.github.io/static/media/e3.ef3402a7213736c097bd.png",
     "static/media/project2-1.png": "/front_portfolio.github.io/static/media/project2-1.9e5b404ce3f4a5d4de72.png",
-    "static/media/e3.png": "/front_portfolio.github.io/static/media/e3.418734bbb1cf0daa1a11.png",
     "static/media/project4.png": "/front_portfolio.github.io/static/media/project4.b82a7bde4930b0cf268d.png",
+    "static/media/e1.png": "/front_portfolio.github.io/static/media/e1.4c15645c5668d977f307.png",
     "static/media/project3.png": "/front_portfolio.github.io/static/media/project3.ec431ec0ef12cd21eb3d.png",
-    "static/media/project7.png": "/front_portfolio.github.io/static/media/project7.04a85f83aa6149e04897.png",
+    "static/media/e2.png": "/front_portfolio.github.io/static/media/e2.d1ca06f9f95f90a3f76e.png",
+    "static/media/e4.png": "/front_portfolio.github.io/static/media/e4.26ca1715f3730796b1e5.png",
     "index.html": "/front_portfolio.github.io/index.html",
-    "main.2e343388.js.map": "/front_portfolio.github.io/static/js/main.2e343388.js.map"
+    "main.c8be1509.js.map": "/front_portfolio.github.io/static/js/main.c8be1509.js.map"
   },
   "entrypoints": [
-    "static/js/main.2e343388.js"
+    "static/js/main.c8be1509.js"
   ]
 }
